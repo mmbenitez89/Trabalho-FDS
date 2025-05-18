@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Fundamentos de Desenvolvimento de Software</title>
+    <style>
+        /* Estilização geral do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f4f8; /* Cor suave */
+        }
+
+        /* Estilização do título */
+        h1 {
+            color: #2e86de; /* Cor diferente */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Estilização do parágrafo */
+        p {
+            font-size: 18px;
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Estilização da lista */
+        ul {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            list-style-type: square;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* Estilização da tabela */
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2e86de;
+            color: #ffffff;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #e9f3fc;
+        }
+
+        /* Estilização das imagens */
+        img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px; /* Bordas arredondadas */
+            margin: 10px 0;
+        }
+
+        /* Estilização do link */
+        a {
+            display: block;
+            text-align: center;
+            background-color: #2e86de;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 200px;
+            margin: 20px auto;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #1d5f9d;
+            color: #f0f4f8;
+        }
+
+        /* Estilização do botão */
+        button {
+            display: block;
+            background-color: #2e86de;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px auto;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #1d5f9d;
+            transform: scale(1.05);
+        }
+
+        /* Estilização da mensagem oculta */
+        #mensagem {
+            display: none;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px auto;
+            width: 60%;
+            color: #555;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Marcelo Medeiros Benitez</h1>
+   
+    <p>Ola! Me chamo Marcelo, tenho 36 anos de idade, atualmente moro na Alemanha, na cidade de Erlangen que se situa na região da Baviera. 
+	Gosto de praticar esportes e também me interesso por tecnologia.</p>
+
+<button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+   
+    <div id="mensagem">Bem-vindo à minha página! Espero que você goste do conteúdo. </div>
+   
+    <ul>
+        <li>Praticar Jiu-Jitsu</li>
+        <li>Corrida de rua</li>
+        <li>Jogar videogame</li>
+    </ul>
+	<img src="https://media.istockphoto.com/photos/jiu-jitsu-picture-id166006811?k=6&m=166006811&s=612x612&w=0&h=oKup9hKfnhWeWzwdbFCzINg7aV0n1NvwOZnQsEb9e40=" alt="Imagem Jiu-Jitsu">
+   
+    
+	<h2 style="text-align: center;">Tabela com Países</h2>
+    <table>
+        <tr>
+            <th>País</th>
+            <th>Bandeira</th>
+        </tr>
+        <tr>
+            <td>Bélgica</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg" alt="Bandeira da Bélgica"></td>
+        </tr>
+        <tr>
+            <td>Estados Unidos</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos Estados Unidos"></td>
+        </tr>
+        <tr>
+            <td>Japão</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Bandeira do Japão"></td>
+        </tr>
+    </table>
+   
+    <a href="https://www.infomoney.com.br/" target="_blank">Mantenha-se informado sobre dinheiro!</a>
+
+<script>
+        function mostrarMensagem() {
+            const mensagem = document.getElementById("mensagem");
+            mensagem.style.display = "block";
+        }
+    </script>
+</body>
+</html>
